@@ -1,0 +1,79 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+/* Toolbar */
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbar button {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  color: black;
+}
+
+.toolbar button:hover {
+  background: #e5e7eb;
+}
+
+.toolbar button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Editor Container */
+.editor-container {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  background: white;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  width: 300px;
+  max-width: 300px;
+  height: fit-content;
+}
+
+.editor-container:focus-within {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.editor {
+  min-height: 200px;
+  max-height: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: white;
+  line-height: 1.5;
+  overflow-y: auto;
+  resize: vertical;
+  max-width: 100%;
+  width: 100%;
+  word-break: break-word;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+}
+.controllers-container {
+  display: flex;
+  gap: 30px;
+}
